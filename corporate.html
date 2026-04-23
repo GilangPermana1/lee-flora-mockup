@@ -21,7 +21,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 .announcement-bar {
   background: #fff;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   padding: 10px 20px;
   letter-spacing: .3px;
   color: #1e1e1e;
@@ -43,7 +43,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   flex-shrink: 0;
 }
 .logo-text {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   color: #1e1e1e;
   letter-spacing: -.2px;
@@ -80,7 +80,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 .nav-links li a:hover { color: #4a6741; }
 .nav-active { border-bottom: 1.5px solid #1e1e1e; }
 .nav-underline > a { text-decoration: underline !important; }
-.caret { font-size: 12px; opacity: .6; }
+.caret { font-size: 14px; opacity: .6; }
 .nav-icons {
   display: flex;
   align-items: center;
@@ -116,7 +116,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   margin: 0 auto;
 }
 .footer-col h4 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   color: #1e1e1e;
   margin-bottom: 20px;
@@ -132,7 +132,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 .footer-col ul li a:hover { color: #4a6741; }
 .store-label {
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
   color: #1e1e1e;
   margin-bottom: 6px;
   letter-spacing: .5px;
@@ -145,7 +145,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 .store-detail { margin-top: 14px !important; }
 .store-tagline {
   margin-top: 14px !important;
-  font-size: 13px !important;
+  font-size: 14px !important;
   color: #7a7068 !important;
   font-style: italic;
   line-height: 1.6 !important;
@@ -205,12 +205,18 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   padding: 10px 18px;
   border-radius: 24px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 6px;
 }
+
+.shop-btn:hover {
+  background: #4528c6;
+  transform: scale(1.05);
+}
+
 .social-icon {
   width: 36px;
   height: 36px;
@@ -232,7 +238,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   align-items: center;
   justify-content: center;
   gap: 32px;
-  font-size: 12px;
+  font-size: 14px;
   color: #8c8070;
   flex-wrap: wrap;
 }
@@ -247,7 +253,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   border: 1px solid #e0dbd4;
   border-radius: 4px;
   padding: 3px 8px;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   color: #3d3830;
   letter-spacing: .3px;
@@ -265,14 +271,22 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 
 .hero{background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/corporate-hero.png');background-position: center;background-size: cover;background-repeat: no-repeat;padding:90px 60px 80px;position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 40%,rgba(255,255,255,0.04),transparent 60%);}
-.hero-label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#a8c4a0;margin-bottom:20px;}
+.hero-label{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#a8c4a0;margin-bottom:20px;}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,62px);color:#fff;line-height:1.15;max-width:580px;margin-bottom:22px;}
-.hero p{color:#c8d8c4;max-width:520px;line-height:1.8;margin-bottom:34px;font-size:15px;}
+.hero p{color:#c8d8c4;max-width:520px;line-height:1.8;margin-bottom:34px;font-size:16px;}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
 .btn-gold{background:#c8a97e;color:#1e1e1e;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;font-size:14px;}
+.btn-gold:hover {
+  background: #a38a66;
+  transform: scale(1.02);
+}
 .btn-outline{border:1px solid rgba(255,255,255,0.4);color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-size:14px;}
+.btn-outline:hover {
+  border-width: 2px;
+  transform: scale(1.02);
+}
 .why-section{padding:80px 60px;text-align:center;}
-.section-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--warm-gray);margin-bottom:14px;}
+.section-label{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--warm-gray);margin-bottom:14px;text-align: center;}
 .why-section h2{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,40px);max-width:680px;margin:0 auto 22px;line-height:1.3;}
 .why-section p{max-width:660px;margin:0 auto;line-height:1.9;color:#5a5046;font-size:15px;}
 .why-section p strong{color:var(--sage);}
@@ -280,10 +294,10 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 .solutions h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,36px);text-align:center;margin-bottom:52px;}
 .solutions-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:36px;max-width:1100px;margin:0 auto;}
 .sol-card{background:#fff;border-radius:8px;overflow:hidden;}
-.sol-card-img{height:180px;background:#ffffff;display:flex;align-items:center;justify-content:center;font-size:52px;}
+.sol-card-img{height:180px;background:#ffffff;display:flex;align-items:center;justify-content:center;}
 .sol-card-body{padding:26px;}
 .sol-card h3{font-family:'Playfair Display',serif;font-size:20px;margin-bottom:10px;}
-.sol-card p{font-size:14px;line-height:1.7;color:#6b6258;}
+.sol-card p{font-size:16px;line-height:1.7;color:#6b6258;}
 .sol-card-img img {
   width: 100%;
   height: 100%;
@@ -361,7 +375,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 
 /* TITLE */
 .benefit-card h4 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 8px;
   color: #333;
@@ -369,17 +383,17 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 
 /* TEXT */
 .benefit-card p {
-  font-size: 13px;
+  font-size: 16px;
   color: #7a7068;
   line-height: 1.6;
 }
 .cost-section{padding:80px 60px;background:var(--cream);}
 .cost-section h2{font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,34px);text-align:center;margin-bottom:10px;}
-.cost-section .sub{text-align:center;font-size:12px;color:var(--warm-gray);margin-bottom:40px;}
+.cost-section .sub{text-align:center;font-size:16px;color:var(--warm-gray);margin-bottom:40px;}
 .cost-table{max-width:900px;margin:0 auto;border-radius:8px;overflow:hidden;box-shadow:0 2px 20px rgba(0,0,0,0.08);}
 .cost-table table{width:100%;border-collapse:collapse;background:#fff;}
 .cost-table thead{background:var(--sage);}
-.cost-table thead th{color:#fff;padding:16px 20px;text-align:left;font-size:13px;font-weight:500;letter-spacing:.4px;}
+.cost-table thead th{color:#fff;padding:16px 20px;text-align:left;font-size:14px;font-weight:500;letter-spacing:.4px;}
 .cost-table tbody tr:nth-child(even){background:#f9f7f4;}
 .cost-table tbody td{padding:14px 20px;font-size:14px;border-bottom:1px solid #ede8e0;}
 .cost-table .highlight{background:#2d3a29!important;}
@@ -389,6 +403,10 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 .install-cta h2{font-family:'Playfair Display',serif;font-size:28px;margin-bottom:12px;}
 .install-cta p{color:#6b6258;max-width:520px;margin:0 auto 28px;line-height:1.7;}
 .btn-dark{background:var(--dark);color:#fff;padding:14px 32px;border-radius:4px;text-decoration:none;font-size:14px;}
+.btn-dark:hover {
+  background:#3f3f3f;
+  transform: scale(1.02);
+}
 .faq-section{padding:80px 60px;background:var(--cream);}
 .faq-section h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,36px);text-align:center;margin-bottom:48px;}
 .faq-item{max-width:760px;margin:0 auto 4px;background:#fff;border-radius:6px;overflow:hidden;}
@@ -399,10 +417,28 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 .faq-item.open .faq-q::after{content:'‹';}
 .bottom-cta{padding:80px 60px;text-align:center;background:var(--sage);}
 .bottom-cta h2{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);color:#fff;margin-bottom:14px;}
-.bottom-cta p{color:#c8d8c4;margin-bottom:34px;font-size:15px;}
+.bottom-cta p{color:#c8d8c4;margin-bottom:34px;font-size:16px;}
 .bottom-cta .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
 .btn-cream{background:#c8a97e;color:#1e1e1e;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;}
+.btn-cream:hover {
+  background:#a38a66;
+  transform: scale(1.02);
+}
 .btn-ghost{border:1px solid rgba(255,255,255,0.5);color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;}
+.btn-ghost:hover {
+  border-width: 2px;
+  transform: scale(1.02);
+}
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 @media(max-width:768px){
   .hero,.why-section,.solutions,.benefits,.cost-section,.install-cta,.faq-section,.bottom-cta{padding:60px 24px;}
   .solutions-grid{grid-template-columns:1fr;}
@@ -441,46 +477,53 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 </header>
 
 <section class="hero">
-  <div class="hero-label">Corporate &amp; Event Flowers</div>
-  <h1>Maintenance-Free Flowers for Your Office &amp; Events</h1>
-  <p>Preserved moss walls, lobby arrangements, and event installations using our combo approach — blending preserved flowers &amp; artificial flowers to create pieces that look fresh year-round at lower cost.</p>
-  <div class="hero-btns">
-    <a href="#" class="btn-gold">Get a Corporate Quote</a>
-    <a href="#" class="btn-outline">Browse Products</a>
+  <div class="animate">
+    <div class="hero-label">Corporate &amp; Event Flowers</div>
+    <h1>Maintenance-Free Flowers for Your Office &amp; Events</h1>
+    <p>Preserved moss walls, lobby arrangements, and event installations using our combo approach — blending preserved flowers &amp; artificial flowers to create pieces that look fresh year-round at lower cost.</p>
+    <div class="hero-btns">
+      <a href="#" class="btn-gold">Get a Corporate Quote</a>
+      <a href="#" class="btn-outline">Browse Products</a>
+    </div>
   </div>
 </section>
 <section class="why-section">
-  <div class="section-label">Corporate Flowers Singapore</div>
-  <h2>Why Singapore Businesses Are Switching to Preserved &amp; Artificial Flower Combos</h2>
-  <p>Fresh flower subscriptions for offices typically cost $200–$800 per month in Singapore — that's $2,400–$7,200 per year for flowers that wilt within a week. Preserved and artificial flower arrangements from Lee Flora Wholesale are a one-time investment that lasts 2–5 years.<br><br>Our <strong>combo approach</strong> — blending preserved flowers with artificial greenery and blooms — reduces costs by 30–40% compared to an all-preserved installation while achieving an equally stunning result.</p>
+  <div class="animate">
+    <div class="section-label">Corporate Flowers Singapore</div>
+    <h2>Why Singapore Businesses Are Switching to Preserved &amp; Artificial Flower Combos</h2>
+    <p>Fresh flower subscriptions for offices typically cost $200–$800 per month in Singapore — that's $2,400–$7,200 per year for flowers that wilt within a week. Preserved and artificial flower arrangements from Lee Flora Wholesale are a one-time investment that lasts 2–5 years.<br><br>Our <strong>combo approach</strong> — blending preserved flowers with artificial greenery and blooms — reduces costs by 30–40% compared to an all-preserved installation while achieving an equally stunning result.</p>
+  </div>
 </section>
 <section class="solutions">
-  <h2>Corporate Flower Solutions</h2>
-  <div class="solutions-grid">
-    <div class="sol-card">
-      <div class="sol-card-img"><img src="image/corporate-hero.png"></div>
-      <div class="sol-card-body">
-        <h3>Office &amp; Lobby Installations</h3>
-        <p>Preserved moss walls with artificial orchids, reception desk arrangements blending preserved lotus with faux greenery, and meeting room centerpieces. Our combo approach creates stunning installations that look fresh year-round at lower cost than all-preserved setups.</p>
+  <div class="animate">
+    <h2>Corporate Flower Solutions</h2>
+    <div class="solutions-grid">
+      <div class="sol-card">
+        <div class="sol-card-img"><img src="image/corporate-hero.png"></div>
+        <div class="sol-card-body">
+          <h3>Office &amp; Lobby Installations</h3>
+          <p>Preserved moss walls with artificial orchids, reception desk arrangements blending preserved lotus with faux greenery, and meeting room centerpieces. Our combo approach creates stunning installations that look fresh year-round at lower cost than all-preserved setups.</p>
+        </div>
       </div>
-    </div>
-    <div class="sol-card">
-      <div class="sol-card-img"><img src="image/corporate-img2.png"></div>
-      <div class="sol-card-body">
-        <h3>Event &amp; Exhibition Styling</h3>
-        <p>Dried and artificial flower installations for corporate dinners, product launches, trade shows, and conferences. Reusable arrangements that travel well and set up fast. Blend preserved centerpieces with artificial greenery backdrops for maximum visual impact.</p>
+      <div class="sol-card">
+        <div class="sol-card-img"><img src="image/corporate-img2.png"></div>
+        <div class="sol-card-body">
+          <h3>Event &amp; Exhibition Styling</h3>
+          <p>Dried and artificial flower installations for corporate dinners, product launches, trade shows, and conferences. Reusable arrangements that travel well and set up fast. Blend preserved centerpieces with artificial greenery backdrops for maximum visual impact.</p>
+        </div>
       </div>
-    </div>
-    <div class="sol-card">
-      <div class="sol-card-img"><img src="image/corporate-img3.png"></div>
-      <div class="sol-card-body">
-        <h3>Corporate Gifts &amp; Hampers</h3>
-        <p>Preserved flower boxes, dried flower bouquets, and botanical gift sets for client appreciation, staff milestones, and festive gifting. Customisable with your company colours using our range of 50+ preserved rose colours.</p>
+      <div class="sol-card">
+        <div class="sol-card-img"><img src="image/corporate-img3.png"></div>
+        <div class="sol-card-body">
+          <h3>Corporate Gifts &amp; Hampers</h3>
+          <p>Preserved flower boxes, dried flower bouquets, and botanical gift sets for client appreciation, staff milestones, and festive gifting. Customisable with your company colours using our range of 50+ preserved rose colours.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 <section class="benefits">
+  <div class="animate">
   <h2>Benefits of Preserved &amp; Artificial Flower Combos for Business</h2>
   <div class="benefits-grid">
 
@@ -520,8 +563,10 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
       <p>Lee Flora stocks preserved, dried, and artificial flowers together — everything in one place.</p>
     </div>
   </div>
+  </div>
 </section>
 <section class="cost-section">
+  <div class="animate">
   <div class="section-label">Cost Comparison</div>
   <h2>Combo vs All-Preserved vs Fresh: Annual Cost for a Typical Singapore Office</h2>
   <p class="sub">*Estimates based on typical Singapore office setups. Actual costs vary. Contact us for a custom quote.</p>
@@ -536,6 +581,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
       </tbody>
     </table>
   </div>
+  </div>
 </section>
 <section class="install-cta">
   <h2>Need a Professional Installation?</h2>
@@ -543,6 +589,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   <a href="#" class="btn-dark">Browse Florist Directory →</a>
 </section>
 <section class="faq-section">
+  <div class="animate">
   <div class="section-label">Frequently Asked Questions</div>
   <h2>Corporate Flower Questions</h2>
   <div class="faq-item open"><div class="faq-q">What is the "combo" approach to corporate flower installations?</div><div class="faq-a">Our combo approach blends preserved flowers with artificial greenery and blooms to create arrangements that look 100% natural while being 30–40% more cost-effective than using all-preserved flowers. For example, a reception wall might use preserved moss as the base with artificial orchids as accents.</div></div>
@@ -550,13 +597,16 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   <div class="faq-item"><div class="faq-q">Can preserved flowers survive in Singapore's air-conditioned offices?</div><div class="faq-a">Yes — preserved flowers are ideal for air-conditioned environments. The controlled humidity of most Singapore offices actually helps extend their lifespan, often beyond the standard 2–3 year estimate.</div></div>
   <div class="faq-item"><div class="faq-q">Does Lee Flora do installation, or just supply the flowers?</div><div class="faq-a">Lee Flora is a wholesale supplier — we supply materials at trade prices. For installation, we can connect you with professional florists in our directory who specialise in corporate and event setups.</div></div>
   <div class="faq-item"><div class="faq-q">What is the minimum order for corporate clients?</div><div class="faq-a">There is no strict minimum order. However, wholesale pricing tiers apply — the more you order, the better the per-unit cost. Contact us via WhatsApp to discuss your specific requirements and get a tailored quote.</div></div>
+  </div>
 </section>
 <section class="bottom-cta">
+  <div class="animate">
   <h2>Transform Your Office with Maintenance-Free Flowers</h2>
   <p>Get a custom quote for your office or event. Preserved + artificial combos that look fresh year-round at a fraction of fresh flower costs.</p>
   <div class="btns">
     <a href="#" class="btn-cream">Get a Corporate Quote</a>
     <a href="#" class="btn-ghost">Browse Products</a>
+  </div>
   </div>
 </section>
 
@@ -630,5 +680,17 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   </div>
 </footer>
 
-<script>document.querySelectorAll(".faq-q").forEach(q=>{q.addEventListener("click",()=>{q.parentElement.classList.toggle("open")})})</script>
+<script>document.querySelectorAll(".faq-q").forEach(q=>{q.addEventListener("click",()=>{q.parentElement.classList.toggle("open")})})
+  const elements = document.querySelectorAll('.animate');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+elements.forEach(el => observer.observe(el));
+</script>
 </body></html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lee Flora Wholesale – Florist Directory Singapore</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--sage:#4b5d4f;--cream:#f7f4ef;--warm-gray:#8c8070;--dark:#1e1e1e;--text:#3d3830;}
+body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
+
+/* ===== SITE HEADER ===== */
+.site-header {
+  font-family: 'DM Sans', sans-serif;
+  border-bottom: 1px solid #e8e4de;
+}
+.announcement-bar {
+  background: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px 20px;
+  letter-spacing: .3px;
+  color: #1e1e1e;
+  border-bottom: 1px solid #e8e4de;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  background: #fff;
+  gap: 20px;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.logo-text {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1e1e1e;
+  letter-spacing: -.2px;
+  white-space: nowrap;
+}
+.logo-text sup {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #8c8070;
+  vertical-align: super;
+  margin-left: 2px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 6px;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nav-links li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #3d3830;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
+  transition: color .2s;
+}
+.nav-links li a:hover { color: #4a6741; }
+.nav-active { border-bottom: 1.5px solid #1e1e1e; }
+.nav-underline > a { text-decoration: underline !important; }
+.caret { font-size: 12px; opacity: .6; }
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: #3d3830;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: color .2s;
+}
+.icon-btn:hover { color: #4a6741; }
+/* ===== SITE FOOTER ===== */
+.site-footer {
+  background: #f7f4ef;
+  border-top: 1px solid #e8e4de;
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 0;
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  gap: 48px;
+  padding: 56px 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-col h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 20px;
+}
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 10px; }
+.footer-col ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #5a5046;
+  transition: color .2s;
+}
+.footer-col ul li a:hover { color: #4a6741; }
+.store-label {
+  font-weight: 600;
+  font-size: 13px;
+  color: #1e1e1e;
+  margin-bottom: 6px;
+  letter-spacing: .5px;
+}
+.footer-store p {
+  font-size: 14px;
+  color: #5a5046;
+  line-height: 1.7;
+}
+.store-detail { margin-top: 14px !important; }
+.store-tagline {
+  margin-top: 14px !important;
+  font-size: 13px !important;
+  color: #7a7068 !important;
+  font-style: italic;
+  line-height: 1.6 !important;
+}
+.footer-bottom-wrap {
+  border-top: 1px solid #e8e4de;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.footer-subscribe p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #1e1e1e;
+}
+.subscribe-form {
+  display: flex;
+  border: 1px solid #c8c0b4;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 280px;
+}
+.subscribe-form input {
+  flex: 1;
+  border: none;
+  padding: 10px 14px;
+  font-size: 14px;
+  background: #fff;
+  outline: none;
+  color: #3d3830;
+  font-family: inherit;
+}
+.subscribe-form button {
+  background: #fff;
+  border: none;
+  border-left: 1px solid #c8c0b4;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #3d3830;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.shop-btn {
+  background: #7b4f9e;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.social-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3d3830;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid #e0dbd4;
+  background: #fff;
+  transition: border-color .2s;
+}
+.social-icon:hover { border-color: #4a6741; color: #4a6741; }
+.footer-copyright {
+  border-top: 1px solid #e8e4de;
+  padding: 18px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  font-size: 12px;
+  color: #8c8070;
+  flex-wrap: wrap;
+}
+.payment-icons {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pay-icon {
+  background: #fff;
+  border: 1px solid #e0dbd4;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #3d3830;
+  letter-spacing: .3px;
+  font-family: sans-serif;
+}
+.pay-icon.amex { color: #006fcf; }
+.pay-icon.visa { color: #1a1f71; font-style: italic; }
+@media(max-width: 768px) {
+  .main-nav { padding: 14px 20px; flex-wrap: wrap; gap: 12px; }
+  .nav-links { display: none; }
+  .footer-inner { grid-template-columns: 1fr; padding: 40px 24px 24px; gap: 32px; }
+  .footer-bottom-wrap { padding: 20px 24px; flex-direction: column; align-items: flex-start; }
+  .footer-copyright { padding: 16px 24px; flex-direction: column; text-align: center; }
+}
+
+.hero{background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/florist.png');;background-position: center;background-size: cover;background-repeat: no-repeat;padding:150px 60px 150px;position:relative;overflow:hidden;}
+.hero-label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#a8c4a0;margin-bottom:18px;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(38px,5.5vw,66px);color:#fff;line-height:1.12;max-width:600px;margin-bottom:22px;}
+.hero p{color:#c8d8c4;max-width:500px;line-height:1.8;margin-bottom:32px;font-size:15px;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-gold{background:#c8a97e;color:#1e1e1e;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;font-size:14px;}
+.btn-whatsapp{background:#25D366;color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;font-size:14px;}
+.intro-section{padding:80px 60px;text-align:center;}
+.section-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--warm-gray);margin-bottom:14px;}
+.intro-section h2{font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,36px);max-width:680px;margin:0 auto 20px;line-height:1.3;}
+.intro-section p{max-width:640px;margin:0 auto;line-height:1.9;color:#5a5046;font-size:15px;}
+.directory{padding:80px 60px;background:var(--cream);}
+.dir-count{font-size:13px;color:var(--warm-gray);margin-bottom:26px;max-width:1100px;margin-left:auto;margin-right:auto;padding-bottom:8px;}
+.florist-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1100px;margin:0 auto;}
+.florist-card{background:#fff;border-radius:8px;padding:26px;position:relative;}
+.ext-link{position:absolute;top:14px;right:14px;color:var(--warm-gray);text-decoration:none;font-size:15px;opacity:.6;transition:opacity .2s;}
+.ext-link:hover{opacity:1;}
+.florist-name{font-family:'Playfair Display',serif;font-size:17px;margin-bottom:6px;font-weight:700;padding-right:24px;}
+.florist-location{font-size:12px;color:var(--warm-gray);margin-bottom:12px;}
+.tag-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.tag{background:var(--cream);border-radius:20px;padding:4px 12px;font-size:11px;color:#5a5046;}
+.florist-desc{font-size:13px;line-height:1.7;color:#6b6258;}
+.get-listed{padding:80px 60px;text-align:center;}
+.get-listed h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,40px);margin-bottom:16px;}
+.get-listed p{max-width:560px;margin:0 auto 30px;color:#5a5046;line-height:1.8;font-size:15px;}
+.btn-dark{background:var(--dark);color:#fff;padding:15px 34px;border-radius:4px;text-decoration:none;font-size:14px;display:inline-block;}
+.faq-section{padding:80px 60px;background:var(--cream);}
+.faq-section h2{font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,36px);text-align:center;margin-bottom:48px;}
+.faq-item{max-width:760px;margin:0 auto 4px;background:#fff;border-radius:6px;overflow:hidden;}
+.faq-q{padding:18px 24px;font-weight:500;font-size:14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
+.faq-q::after{content:'›';font-size:20px;color:var(--warm-gray);}
+.faq-a{padding:0 24px 18px;font-size:14px;color:#6b6258;line-height:1.7;display:none;}
+.faq-item.open .faq-a{display:block;}
+.faq-item.open .faq-q::after{content:'‹';}
+.bottom-cta{padding:80px 60px;background:var(--sage);text-align:center;}
+.bottom-cta h2{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);color:#fff;margin-bottom:14px;}
+.bottom-cta p{color:#c8d8c4;margin-bottom:32px;font-size:15px;}
+.bottom-cta .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.btn-cream{background:#c4a08a;color:#1e1e1e;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;}
+.btn-green{border:1px solid rgba(255,255,255,0.4);color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;}
+@media(max-width:768px){
+  .hero,.intro-section,.directory,.get-listed,.faq-section,.bottom-cta{padding:60px 24px;}
+  .florist-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="announcement-bar">Free Local Shipping for all orders over $300</div>
+  <nav class="main-nav">
+    <a href="#" class="nav-logo">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="26" cy="26" r="24" stroke="#4a6741" stroke-width="1.4" fill="none"/>
+        <circle cx="26" cy="26" r="18" stroke="#4a6741" stroke-width="1" fill="none" opacity="0.55"/>
+        <circle cx="26" cy="26" r="12" stroke="#4a6741" stroke-width="0.8" fill="none" opacity="0.3"/>
+        <path d="M14 26 Q16 14 26 11" stroke="#4a6741" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.7"/>
+        <path d="M12 30 Q13 10 26 8" stroke="#4a6741" stroke-width="0.9" fill="none" stroke-linecap="round" opacity="0.45"/>
+        <path d="M38 26 Q36 14 26 11" stroke="#4a6741" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.7"/>
+        <path d="M40 30 Q39 10 26 8" stroke="#4a6741" stroke-width="0.9" fill="none" stroke-linecap="round" opacity="0.45"/>
+        <line x1="26" y1="22" x2="26" y2="38" stroke="#4a6741" stroke-width="2" stroke-linecap="round"/>
+        <line x1="26" y1="28" x2="20" y2="23" stroke="#4a6741" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="26" y1="25" x2="32" y2="20" stroke="#4a6741" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="26" y1="31" x2="21" y2="27" stroke="#4a6741" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="26" y1="30" x2="31" y2="27" stroke="#4a6741" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">Lee Flora <sup>WHOLESALE</sup></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#" class="nav-active">Home</a></li>
+      <li class="has-dropdown"><a href="#">Wholesale Flowers <span class="caret">&#8964;</span></a></li>
+      <li class="has-dropdown"><a href="#">Accessories <span class="caret">&#8964;</span></a></li>
+      <li><a href="#">Portfolios</a></li>
+      <li class="has-dropdown"><a href="#">How-To Videos <span class="caret">&#8964;</span></a></li>
+      <li class="has-dropdown nav-underline"><a href="#">Florists Directory <span class="caret">&#8964;</span></a></li>
+    </ul>
+    <div class="nav-icons">
+      <button class="icon-btn" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Account">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-label">Florist Directory</div>
+  <h1>Find a Florist in Singapore</h1>
+  <p>Discover talented florists who specialise in preserved, dried, and artificial flower arrangements — including combo specialists who blend all three types. All florists in our directory are trusted partners who source their flowers from Lee Flora Wholesale.</p>
+  <!--<div class="hero-btns">
+    <a href="#" class="btn-gold">Browse Directory</a>
+    <a href="#" class="btn-whatsapp">WhatsApp Us</a>
+  </div>-->
+</section>
+<section class="intro-section">
+  <div class="section-label">Singapore's Curated Florist Directory</div>
+  <h2>Singapore's Curated Florist Directory for Preserved &amp; Dried Flowers</h2>
+  <p>Whether you need a bridal bouquet, corporate installation, hantaran arrangement, or a gift for someone special, our directory connects you with skilled florists across Singapore who work with preserved, dried, and artificial flowers. Many of our listed florists are combo specialists — they blend preserved flowers with artificial greenery and blooms to create fuller, more cost-effective arrangements. Every florist listed here is a Lee Flora Wholesale partner, ensuring they have access to the widest range of premium flowers at the best prices.</p>
+</section>
+<section class="directory">
+  <p class="dir-count">Showing 8 of 8 florists</p>
+  <div class="florist-grid">
+    <div class="florist-card">
+      <a href="#" class="ext-link">↗</a>
+      <div class="florist-name">Bloom &amp; Song</div>
+      <div class="florist-location">📍 Central Singapore</div>
+      <div class="tag-row"><span class="tag">Preserved Flowers</span><span class="tag">Wedding</span></div>
+      <p class="florist-desc">Specialises in preserved flower bridal bouquets and wedding table arrangements. Known for romantic, pastel-toned designs using preserved roses and dried baby's breath.</p>
+    </div>
+    <div class="florist-card">
+      <a href="#" class="ext-link">↗</a>
+      <div class="florist-name">The Floral Atelier</div>
+      <div class="florist-location">📍 East Singapore</div>
+      <div class="tag-row"><span class="tag">Dried Flowers</span><span class="tag">Events</span></div>
+      <p class="florist-desc">Boutique florist creating dried flower installations for corporate events, product launches, and exhibitions. Expert in large-scale pampas grass and dried palm arrangements.</p>
+    </div>
+    <div class="florist-card">
+      <a href="#" class="ext-link">↗</a>
+      <div class="florist-name">Petals &amp; Craft</div>
+      <div class="florist-location">📍 North Singapore</div>
+      <div class="tag-row"><span class="tag">Preserved Flowers</span><span class="tag">Gifts</span></div>
+      <p class="florist-desc">Creates preserved flower boxes, bell jar arrangements, and personalised gift sets. Popular for birthday gifts, anniversary presents, and corporate gifting.</p>
+    </div>
+    <div class="florist-card">
+      <a href="#" class="ext-link">↗</a>
+      <div class="florist-name">Rustic Blooms SG</div>
+      <div class="florist-location">📍 West Singapore</div>
+      <div class="tag-row"><span class="tag">Dried Flowers</span><span class="tag">Wedding</span></div>
+      <p class="florist-desc">Rustic and bohemian-style dried flower arrangements for weddings and home décor. Specialises in pampas grass arches, dried flower bouquets, and hanging installations.</p>
+    </div>
+    <div class="florist-card">
+      <a href="#" class="ext-link">↗</a>
+      <div class="florist-name">Hana Floral Studio</div>
+      <div class="florist-location">📍 Central Singapore</div>
+      <div class="tag-row"><span class="tag">Preserved Flowers</span><span class="tag">Corporate</span></div>
+      <p class="florist-desc">Japanese-inspired minimalist preserved flower arrangements for offices, hotels, and restaurants. Known for clean, elegant designs using preserved moss and foliage.</p>
+    </div>
+    <div class="florist-card">
+      <a href="#" class="ext-link">↗</a>
+      <div class="florist-name">Bunga Hantaran SG</div>
+      <div class="florist-location">📍 North-East Singapore</div>
+      <div class="tag-row"><span class="tag">Artificial Flowers</span><span class="tag">Malay Wedding</span></div>
+      <p class="florist-desc">Specialises in Malay wedding hantaran gift trays, pelamin decorations, and nikah ceremony flowers using premium faux and preserved flowers.</p>
+    </div>
+    <div class="florist-card">
+      <a href="#" class="ext-link">↗</a>
+      <div class="florist-name">Evergreen Arrangements</div>
+      <div class="florist-location">📍 Central Singapore</div>
+      <div class="tag-row"><span class="tag">Artificial Flowers</span><span class="tag">Interior Design</span></div>
+      <p class="florist-desc">High-end faux flower installations for interior designers, show flats, and luxury retail spaces. Creates realistic, permanent floral displays that require zero maintenance.</p>
+    </div>
+    <div class="florist-card">
+      <a href="#" class="ext-link">↗</a>
+      <div class="florist-name">Wildflower Workshop</div>
+      <div class="florist-location">📍 South Singapore</div>
+      <div class="tag-row"><span class="tag">Dried Flowers</span><span class="tag">Workshops</span></div>
+      <p class="florist-desc">Conducts dried and preserved flower arrangement workshops for team building, hen parties, and private events. Also creates custom dried flower bouquets and wreaths.</p>
+    </div>
+  </div>
+</section>
+<section class="get-listed">
+  <h2>Are You a Florist? Get Listed for Free</h2>
+  <p>If you purchase your preserved, dried, or artificial flowers from Lee Flora Wholesale, you can apply for a free listing in our Florists Directory. Gain visibility, attract new customers, and grow your business.</p>
+  <a href="#" class="btn-dark">Apply for a Free Listing →</a>
+</section>
+<section class="faq-section">
+  <div class="section-label" style="text-align:center;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8c8070;margin-bottom:14px;">Directory FAQs</div>
+  <h2>Frequently Asked Questions About Our Florist Directory</h2>
+  <div class="faq-item open"><div class="faq-q">How do I get listed in the Lee Flora Florists Directory?</div><div class="faq-a">To be listed, you need to be an active customer of Lee Flora Wholesale — purchasing your preserved, dried, or artificial flowers from us. Apply using the button above, and our team will review your application. Listing is free of charge.</div></div>
+  <div class="faq-item"><div class="faq-q">Are these florists employed by Lee Flora?</div><div class="faq-a">No — the florists in our directory are independent businesses. Lee Flora Wholesale is a supplier; the florists are our customers and partners. We list them to help connect skilled florists with customers who are looking for their services.</div></div>
+  <div class="faq-item"><div class="faq-q">Can I hire a florist from this directory for my wedding?</div><div class="faq-a">Yes — many of the florists in our directory specialise in weddings and wedding-related arrangements including bridal bouquets, hantaran, and table décor. Contact the individual florist directly for quotes and availability.</div></div>
+  <div class="faq-item"><div class="faq-q">Do these florists offer delivery across Singapore?</div><div class="faq-a">Delivery policies vary by florist. Most offer island-wide delivery for completed arrangements, though terms and fees differ. Contact your chosen florist directly for their specific delivery details.</div></div>
+</section>
+<section class="bottom-cta">
+  <h2>Need Flowers? We've Got You Covered</h2>
+  <p>Shop directly from Lee Flora Wholesale for DIY projects, or connect with a florist from our directory for custom arrangements.</p>
+  <div class="btns">
+    <a href="#" class="btn-cream">Shop Wholesale</a>
+    <a href="#" class="btn-green">WhatsApp Us</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>About Lee Flora Wholesale</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">What are Preserved Flowers</a></li>
+        <li><a href="#">What are Dried Flowers</a></li>
+        <li><a href="#">What are Faux Flowers</a></li>
+        <li><a href="#">What are Sola Flowers</a></li>
+        <li><a href="#">Preserved Moss</a></li>
+        <li><a href="#">Flower Care</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Terms &amp; Policies</h4>
+      <ul>
+        <li><a href="#">Delivery Policy</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-store">
+      <h4>Lee Flora Wholesale Store</h4>
+      <p class="store-label">OPEN TO THE PUBLIC:</p>
+      <p>Mon – Fri : 9.30am – 6.30pm</p>
+      <p>Sat : 10am – 6pm</p>
+      <p>Sun : Closed</p>
+      <p class="store-detail"><strong>Address</strong>: 14 Arumugam Rd, #03-11 LTC Building C, Singapore 409959</p>
+      <p class="store-detail"><strong>WhatsApp</strong>: +65 9183 8193</p>
+      <p class="store-tagline"><em>Lee Flora Wholesale is the largest wholesale supplier in Singapore for preserved flowers, dried flowers, faux flowers, and sola flowers.</em></p>
+    </div>
+  </div>
+  <div class="footer-bottom-wrap">
+    <div class="footer-subscribe">
+      <p>Subscribe to our emails</p>
+      <div class="subscribe-form">
+        <input type="email" placeholder="Email">
+        <button type="button">&#8594;</button>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="#" class="shop-btn">&#9829; Follow on shop</a>
+      <a href="#" class="social-icon" aria-label="Facebook">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="#" class="social-icon" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="#" class="social-icon" aria-label="TikTok">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <span>&copy; 2026, Lee Flora Wholesale &nbsp; Powered by Shopify</span>
+    <div class="payment-icons">
+      <span class="pay-icon amex">AMEX</span>
+      <span class="pay-icon apple">&#63743; Pay</span>
+      <span class="pay-icon google">G Pay</span>
+      <span class="pay-icon mc">MC</span>
+      <span class="pay-icon shop">Shop</span>
+      <span class="pay-icon union">UnionPay</span>
+      <span class="pay-icon visa">VISA</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.querySelectorAll(".faq-q").forEach(q=>{q.addEventListener("click",()=>{q.parentElement.classList.toggle("open")})})</script>
+</body></html>

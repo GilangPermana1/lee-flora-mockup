@@ -261,45 +261,84 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 }
 
 .hero{background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/florist.png');;background-position: center;background-size: cover;background-repeat: no-repeat;padding:150px 60px 150px;position:relative;overflow:hidden;}
-.hero-label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#a8c4a0;margin-bottom:18px;}
+.hero-label{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#a8c4a0;margin-bottom:18px;}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(38px,5.5vw,66px);color:#fff;line-height:1.12;max-width:600px;margin-bottom:22px;}
-.hero p{color:#c8d8c4;max-width:500px;line-height:1.8;margin-bottom:32px;font-size:15px;}
+.hero p{color:#c8d8c4;max-width:500px;line-height:1.8;margin-bottom:32px;font-size:16px;}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
-.btn-gold{background:#c8a97e;color:#1e1e1e;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;font-size:14px;}
-.btn-whatsapp{background:#25D366;color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;font-size:14px;}
+/*.btn-gold{background:#c8a97e;color:#1e1e1e;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;font-size:15px;}
+.btn-whatsapp{background:#25D366;color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;font-size:15px;}*/
 .intro-section{padding:80px 60px;text-align:center;}
 .section-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--warm-gray);margin-bottom:14px;}
 .intro-section h2{font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,36px);max-width:680px;margin:0 auto 20px;line-height:1.3;}
-.intro-section p{max-width:640px;margin:0 auto;line-height:1.9;color:#5a5046;font-size:15px;}
+.intro-section p{max-width:640px;margin:0 auto;line-height:1.9;color:#5a5046;font-size:16px;}
 .directory{padding:80px 60px;background:var(--cream);}
 .dir-count{font-size:13px;color:var(--warm-gray);margin-bottom:26px;max-width:1100px;margin-left:auto;margin-right:auto;padding-bottom:8px;}
 .florist-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1100px;margin:0 auto;}
 .florist-card{background:#fff;border-radius:8px;padding:26px;position:relative;}
+.florist-card:hover {
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
 .ext-link{position:absolute;top:14px;right:14px;color:var(--warm-gray);text-decoration:none;font-size:15px;opacity:.6;transition:opacity .2s;}
 .ext-link:hover{opacity:1;}
 .florist-name{font-family:'Playfair Display',serif;font-size:17px;margin-bottom:6px;font-weight:700;padding-right:24px;}
-.florist-location{font-size:12px;color:var(--warm-gray);margin-bottom:12px;}
+.florist-location{font-size:14px;color:var(--warm-gray);margin-bottom:12px;}
 .tag-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
-.tag{background:var(--cream);border-radius:20px;padding:4px 12px;font-size:11px;color:#5a5046;}
-.florist-desc{font-size:13px;line-height:1.7;color:#6b6258;}
+.tag{background:var(--cream);border-radius:20px;padding:4px 12px;font-size:14px;color:#5a5046;}
+.florist-desc{font-size:15px;line-height:1.7;color:#6b6258;}
 .get-listed{padding:80px 60px;text-align:center;}
 .get-listed h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,40px);margin-bottom:16px;}
-.get-listed p{max-width:560px;margin:0 auto 30px;color:#5a5046;line-height:1.8;font-size:15px;}
+.get-listed p{max-width:560px;margin:0 auto 30px;color:#5a5046;line-height:1.8;font-size:16px;}
 .btn-dark{background:var(--dark);color:#fff;padding:15px 34px;border-radius:4px;text-decoration:none;font-size:14px;display:inline-block;}
+.btn-dark:hover {
+  background:#3f3f3f;
+}
 .faq-section{padding:80px 60px;background:var(--cream);}
 .faq-section h2{font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,36px);text-align:center;margin-bottom:48px;}
 .faq-item{max-width:760px;margin:0 auto 4px;background:#fff;border-radius:6px;overflow:hidden;}
-.faq-q{padding:18px 24px;font-weight:500;font-size:14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
-.faq-q::after{content:'›';font-size:20px;color:var(--warm-gray);}
-.faq-a{padding:0 24px 18px;font-size:14px;color:#6b6258;line-height:1.7;display:none;}
-.faq-item.open .faq-a{display:block;}
+.faq-q{padding:18px 24px;font-weight:500;font-size:17px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
+.faq-q::after{content:'›';font-size:17px;color:var(--warm-gray);}
+/*.faq-a{padding:0 24px 18px;font-size:15px;color:#6b6258;line-height:1.7;display:none;}
+.faq-item.open .faq-a{display:block;}*/
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 24px;
+  font-size: 15px;
+  color: #6b6258;
+  line-height: 1.7;
+  opacity: 0;
+  font-size:15px;
+  transition: max-height 0.35s ease, padding 0.35s ease, opacity 0.2s ease;
+}
+
+.faq-item.open .faq-a {
+  max-height: 300px;
+  padding: 0 24px 18px;
+  opacity: 1;
+}
 .faq-item.open .faq-q::after{content:'‹';}
 .bottom-cta{padding:80px 60px;background:var(--sage);text-align:center;}
 .bottom-cta h2{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,44px);color:#fff;margin-bottom:14px;}
-.bottom-cta p{color:#c8d8c4;margin-bottom:32px;font-size:15px;}
+.bottom-cta p{color:#c8d8c4;margin-bottom:32px;font-size:16px;}
 .bottom-cta .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
-.btn-cream{background:#c4a08a;color:#1e1e1e;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;}
-.btn-green{border:1px solid rgba(255,255,255,0.4);color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;}
+.btn-cream{background:#c4a08a;color:#1e1e1e;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;font-size:15px;}
+.btn-cream:hover {
+  background:#a38a66;
+}
+.btn-green{border:1px solid rgba(255,255,255,0.4);color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;font-size:15px;}
+.btn-green:hover {
+  background:#3f3f3f47;
+}
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 @media(max-width:768px){
   .hero,.intro-section,.directory,.get-listed,.faq-section,.bottom-cta{padding:60px 24px;}
   .florist-grid{grid-template-columns:1fr;}
@@ -312,8 +351,8 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   <div class="announcement-bar">Free Local Shipping for all orders over $300</div>
   <nav class="main-nav">
     <a href="#" class="nav-logo">
-      <img src="image/Logo.avif" style="width:52px; height:52px;">
-      <span class="logo-text">Lee Flora <sup>WHOLESALE</sup></span>
+      <img src="image/Logo.avif" style="width:62px; height:62px;">
+      <!--<span class="logo-text">Lee Flora <sup>WHOLESALE</sup></span>-->
     </a>
     <ul class="nav-links">
       <li><a href="#" class="nav-active">Home</a></li>
@@ -338,6 +377,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 </header>
 
 <section class="hero">
+  <div class="animate">
   <div class="hero-label">Florist Directory</div>
   <h1>Find a Florist in Singapore</h1>
   <p>Discover talented florists who specialise in preserved, dried, and artificial flower arrangements — including combo specialists who blend all three types. All florists in our directory are trusted partners who source their flowers from Lee Flora Wholesale.</p>
@@ -345,13 +385,17 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
     <a href="#" class="btn-gold">Browse Directory</a>
     <a href="#" class="btn-whatsapp">WhatsApp Us</a>
   </div>-->
+  </div>
 </section>
 <section class="intro-section">
+  <div class="animate">
   <div class="section-label">Singapore's Curated Florist Directory</div>
   <h2>Singapore's Curated Florist Directory for Preserved &amp; Dried Flowers</h2>
   <p>Whether you need a bridal bouquet, corporate installation, hantaran arrangement, or a gift for someone special, our directory connects you with skilled florists across Singapore who work with preserved, dried, and artificial flowers. Many of our listed florists are combo specialists — they blend preserved flowers with artificial greenery and blooms to create fuller, more cost-effective arrangements. Every florist listed here is a Lee Flora Wholesale partner, ensuring they have access to the widest range of premium flowers at the best prices.</p>
+  </div>
 </section>
 <section class="directory">
+  <div class="animate">
   <p class="dir-count">Showing 8 of 8 florists</p>
   <div class="florist-grid">
     <div class="florist-card">
@@ -411,26 +455,33 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
       <p class="florist-desc">Conducts dried and preserved flower arrangement workshops for team building, hen parties, and private events. Also creates custom dried flower bouquets and wreaths.</p>
     </div>
   </div>
+  </div>
 </section>
 <section class="get-listed">
+  <div class="animate">
   <h2>Are You a Florist? Get Listed for Free</h2>
   <p>If you purchase your preserved, dried, or artificial flowers from Lee Flora Wholesale, you can apply for a free listing in our Florists Directory. Gain visibility, attract new customers, and grow your business.</p>
   <a href="#" class="btn-dark">Apply for a Free Listing →</a>
+  </div>
 </section>
 <section class="faq-section">
+  <div class="animate">
   <div class="section-label" style="text-align:center;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8c8070;margin-bottom:14px;">Directory FAQs</div>
   <h2>Frequently Asked Questions About Our Florist Directory</h2>
   <div class="faq-item open"><div class="faq-q">How do I get listed in the Lee Flora Florists Directory?</div><div class="faq-a">To be listed, you need to be an active customer of Lee Flora Wholesale — purchasing your preserved, dried, or artificial flowers from us. Apply using the button above, and our team will review your application. Listing is free of charge.</div></div>
   <div class="faq-item"><div class="faq-q">Are these florists employed by Lee Flora?</div><div class="faq-a">No — the florists in our directory are independent businesses. Lee Flora Wholesale is a supplier; the florists are our customers and partners. We list them to help connect skilled florists with customers who are looking for their services.</div></div>
   <div class="faq-item"><div class="faq-q">Can I hire a florist from this directory for my wedding?</div><div class="faq-a">Yes — many of the florists in our directory specialise in weddings and wedding-related arrangements including bridal bouquets, hantaran, and table décor. Contact the individual florist directly for quotes and availability.</div></div>
   <div class="faq-item"><div class="faq-q">Do these florists offer delivery across Singapore?</div><div class="faq-a">Delivery policies vary by florist. Most offer island-wide delivery for completed arrangements, though terms and fees differ. Contact your chosen florist directly for their specific delivery details.</div></div>
+  </div>
 </section>
 <section class="bottom-cta">
+  <div class="animate">
   <h2>Need Flowers? We've Got You Covered</h2>
   <p>Shop directly from Lee Flora Wholesale for DIY projects, or connect with a florist from our directory for custom arrangements.</p>
   <div class="btns">
     <a href="#" class="btn-cream">Shop Wholesale</a>
     <a href="#" class="btn-green">WhatsApp Us</a>
+  </div>
   </div>
 </section>
 
@@ -504,5 +555,17 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   </div>
 </footer>
 
-<script>document.querySelectorAll(".faq-q").forEach(q=>{q.addEventListener("click",()=>{q.parentElement.classList.toggle("open")})})</script>
+<script>document.querySelectorAll(".faq-q").forEach(q=>{q.addEventListener("click",()=>{q.parentElement.classList.toggle("open")})})
+  const elements = document.querySelectorAll('.animate');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+elements.forEach(el => observer.observe(el));
+</script>
 </body></html>

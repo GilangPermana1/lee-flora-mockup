@@ -261,21 +261,30 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 }
 
 .hero{background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/banner.png');;background-position: center;background-size: cover;background-repeat: no-repeat;padding:100px 60px 90px;position:relative;overflow:hidden;}
-.hero-label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#a8c4a0;margin-bottom:18px;}
+.hero-label{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#a8c4a0;margin-bottom:18px;}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(42px,6vw,70px);color:#fff;line-height:1.1;max-width:620px;margin-bottom:22px;font-weight:300;}
-.hero p{color:#c8d8c4;max-width:500px;line-height:1.8;margin-bottom:34px;font-size:15px;}
+.hero p{color:#c8d8c4;max-width:500px;line-height:1.8;margin-bottom:34px;font-size:16px;}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
-.btn-whatsapp{background:#c4a087;color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;font-size:14px;}
-.btn-outline{border:1px solid rgba(255,255,255,0.4);color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-size:14px;}
+.btn-whatsapp{background:#c4a087;color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;font-size:15px;}
+.btn-whatsapp:hover {
+  background:#a38a66;
+}
+.btn-outline{border:1px solid rgba(255,255,255,0.4);color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-size:15px;}
+.btn-outline:hover {
+  background:#3f3f3f47;
+}
 .why-section{padding:80px 60px;text-align:center;}
-.section-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--warm-gray);margin-bottom:14px;}
+.section-label{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--warm-gray);margin-bottom:14px;text-align: center;}
 .why-section h2{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,42px);max-width:700px;margin:0 auto 22px;line-height:1.25;font-weight:400;}
-.why-section p{max-width:660px;margin:0 auto;line-height:1.9;color:#5a5046;font-size:15px;}
+.why-section p{max-width:660px;margin:0 auto;line-height:1.9;color:#5a5046;font-size:16px;}
 .flower-types{padding:80px 60px;background:var(--cream);}
 .flower-types h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,42px);text-align:center;margin-bottom:10px;font-weight:400;}
 .flower-types .sub{text-align:center;color:var(--warm-gray);margin-bottom:48px;font-size:15px;}
 .types-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:1000px;margin:0 auto;}
 .type-card{background:#fff;border-radius:8px;overflow:hidden;}
+.type-card:hover {
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
 .type-thumb{height:200px;display:flex;align-items:center;justify-content:center;font-size:62px;}
 .type-thumb.preserved{background:linear-gradient(135deg,#d4e4d0,#c0d6bb);}
 .type-thumb.dried{background:linear-gradient(135deg,#d4c4a0,#c8b080);}
@@ -290,12 +299,12 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 .type-body{padding:22px;}
 .type-body h3{font-family:'Playfair Display',serif;font-size:22px;margin-bottom:10px;font-weight:600;}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
-.tag{background:var(--cream);border-radius:20px;padding:4px 12px;font-size:11px;color:var(--warm-gray);}
-.type-body p{font-size:13px;line-height:1.7;color:#6b6258;}
+.tag{background:var(--cream);border-radius:20px;padding:4px 12px;font-size:14px;color:var(--warm-gray);}
+.type-body p{font-size:15px;line-height:1.7;color:#6b6258;}
 .journey-section{padding:80px 60px;}
 .journey-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1100px;margin:0 auto;}
 .journey-text h2{font-family:'Playfair Display',serif;font-size:clamp(26px,3vw,38px);margin-bottom:8px;font-weight:400;}
-.journey-text .sub{color:var(--warm-gray);margin-bottom:34px;font-size:14px;}
+.journey-text .sub{color:var(--warm-gray);margin-bottom:34px;font-size:15px;}
 .journey-img {overflow: hidden;}
 .journey-img img {
   width: 100%;
@@ -305,43 +314,82 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 }
 .steps{display:flex;flex-direction:column;gap:22px;}
 .step{display:flex;gap:16px;align-items:flex-start;}
-.step-num{width:30px;height:30px;border-radius:50%;background:var(--sage);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;flex-shrink:0;margin-top:2px;}
+.step-num{width:30px;height:30px;border-radius:50%;background:var(--sage);color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:500;flex-shrink:0;margin-top:2px;}
 .step-body h4{font-weight:500;margin-bottom:4px;}
-.step-body p{font-size:13px;color:#6b6258;line-height:1.6;}
+.step-body p{font-size:16px;color:#6b6258;line-height:1.6;}
 .journey-img{height:400px;background:linear-gradient(135deg,#e8f0e4,#d4e4d0);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:80px;}
 .why-diy{padding:80px 60px;background:var(--blush);}
 .why-diy h2{font-family:'Playfair Display',serif;font-size:clamp(26px,3vw,38px);text-align:center;margin-bottom:48px;font-weight:400;}
 .diy-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;max-width:1000px;margin:0 auto;}
 .diy-card{background:#fff;padding:26px 20px;border-radius:8px;}
-.diy-card h4{font-weight:500;margin-bottom:10px;font-size:15px;}
-.diy-card p{font-size:13px;color:#6b6258;line-height:1.6;}
+.diy-card:hover {
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+.diy-card h4{font-weight:500;margin-bottom:10px;font-size:16px;}
+.diy-card p{font-size:15px;color:#6b6258;line-height:1.6;}
 .compare{padding:80px 60px;}
 .compare h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,36px);text-align:center;margin-bottom:44px;font-weight:400;}
 .compare-table{max-width:860px;margin:0 auto;border-radius:8px;overflow:hidden;box-shadow:0 2px 20px rgba(0,0,0,0.07);}
 .compare-table table{width:100%;border-collapse:collapse;background:#fff;}
 .compare-table thead{background:var(--sage);}
-.compare-table thead th{color:#fff;padding:16px 18px;text-align:left;font-size:13px;font-weight:500;}
+.compare-table thead th{color:#fff;padding:16px 18px;text-align:left;font-size:15px;font-weight:500;}
 .compare-table tbody tr:nth-child(even){background:#f9f7f4;}
-.compare-table tbody td{padding:13px 18px;font-size:14px;border-bottom:1px solid #ede8e0;}
+.compare-table tbody td{padding:13px 18px;font-size:15px;border-bottom:1px solid #ede8e0;}
 .combo-col{background:#eef4eb!important;font-weight:500;color:var(--sage);}
 .florist-cta{padding:60px;text-align:center;background:var(--cream);}
 .florist-cta h2{font-family:'Playfair Display',serif;font-size:28px;margin-bottom:12px;font-weight:400;}
-.florist-cta p{color:#6b6258;max-width:500px;margin:0 auto 26px;line-height:1.7;}
-.btn-dark{background:var(--dark);color:#fff;padding:14px 30px;border-radius:4px;text-decoration:none;font-size:14px;}
+.florist-cta p{color:#6b6258;max-width:500px;margin:0 auto 26px;line-height:1.7;font-size:16px;}
+.btn-dark{background:var(--dark);color:#fff;padding:14px 30px;border-radius:4px;text-decoration:none;font-size:15px;}
+.btn-dark:hover {
+  background:#3f3f3f;
+}
 .faq-section{padding:80px 60px;}
 .faq-section h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,36px);text-align:center;margin-bottom:48px;font-weight:400;}
 .faq-item{max-width:760px;margin:0 auto 4px;background:var(--cream);border-radius:6px;overflow:hidden;}
-.faq-q{padding:18px 24px;font-weight:500;font-size:14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
-.faq-q::after{content:'›';font-size:20px;color:var(--warm-gray);}
-.faq-a{padding:0 24px 18px;font-size:14px;color:#6b6258;line-height:1.7;display:none;}
-.faq-item.open .faq-a{display:block;}
+.faq-q{padding:18px 24px;font-weight:500;font-size:17px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
+.faq-q::after{content:'›';font-size:17px;color:var(--warm-gray);}
+/*.faq-a{padding:0 24px 18px;font-size:15px;color:#6b6258;line-height:1.7;display:none;}
+.faq-item.open .faq-a{display:block;}*/
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 24px;
+  font-size: 15px;
+  color: #6b6258;
+  line-height: 1.7;
+  opacity: 0;
+  font-size:15px;
+  transition: max-height 0.35s ease, padding 0.35s ease, opacity 0.2s ease;
+}
+
+.faq-item.open .faq-a {
+  max-height: 300px;
+  padding: 0 24px 18px;
+  opacity: 1;
+}
 .faq-item.open .faq-q::after{content:'‹';}
 .bottom-cta{padding:80px 60px;background:var(--sage);text-align:center;}
 .bottom-cta h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);color:#fff;margin-bottom:14px;font-weight:300;}
-.bottom-cta p{color:#c8d8c4;margin-bottom:32px;font-size:15px;}
+.bottom-cta p{color:#c8d8c4;margin-bottom:32px;font-size:16px;}
 .bottom-cta .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
-.btn-green{background:#c4a087;color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;}
-.btn-ghost{border:1px solid rgba(255,255,255,0.5);color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;}
+.btn-green{background:#c4a087;color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-weight:500;font-size:15px;}
+.btn-green:hover {
+  background:#a38a66;
+}
+.btn-ghost{border:1px solid rgba(255,255,255,0.5);color:#fff;padding:14px 28px;border-radius:4px;text-decoration:none;font-size:15px;}
+.btn-ghost:hover {
+  background:#3f3f3f47;
+}
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 @media(max-width:768px){
   .hero,.why-section,.flower-types,.journey-section,.why-diy,.compare,.florist-cta,.faq-section,.bottom-cta{padding:60px 24px;}
   .types-grid,.diy-grid{grid-template-columns:1fr;}
@@ -356,8 +404,8 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   <div class="announcement-bar">Free Local Shipping for all orders over $300</div>
   <nav class="main-nav">
     <a href="#" class="nav-logo">
-      <img src="image/Logo.avif" style="width:52px; height:52px;">
-      <span class="logo-text">Lee Flora <sup>WHOLESALE</sup></span>
+      <img src="image/Logo.avif" style="width:62px; height:62px;">
+      <!--<span class="logo-text">Lee Flora <sup>WHOLESALE</sup></span>-->
     </a>
     <ul class="nav-links">
       <li><a href="#" class="nav-active">Home</a></li>
@@ -382,6 +430,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 </header>
 
 <section class="hero">
+  <div class="animate">
   <div class="hero-label">Wedding Flowers</div>
   <h1>Create Your Dream Wedding Flowers — Your Way</h1>
   <p>Pick your own preserved, dried, and artificial flowers at wholesale prices. Learn arrangement techniques from our team. DIY your bridal bouquet, centerpieces, and hantaran — more personal, more meaningful.</p>
@@ -389,13 +438,17 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
     <a href="#" class="btn-whatsapp">WhatsApp Us</a>
     <a href="#" class="btn-outline">Shop Online</a>
   </div>
+  </div>
 </section>
 <section class="why-section">
+  <div class="animate">
   <div class="section-label">Why Singapore Brides Are Choosing Preserved &amp; Combo Flowers</div>
   <h2>Flowers That Last Beyond Your Wedding Day</h2>
   <p>More Singapore brides are choosing preserved and artificial flowers over fresh for their weddings. Preserved flowers are real flowers treated to last 2–5 years, meaning your bridal bouquet becomes a permanent keepsake. When blended with premium artificial greenery, the result is a fuller, more dynamic arrangement at a fraction of the cost of all-fresh flowers.<br><br>At Lee Flora, we supply all three types — preserved, dried, and artificial — so you can mix and match to create your perfect wedding look at wholesale prices.</p>
+  </div>
 </section>
 <section class="flower-types">
+  <div class="animate">
   <div class="section-label">Our Wedding Flower Collections</div>
   <h2>Three Types of Flowers, One Destination</h2>
   <p class="sub">Combine all three for a unique combo arrangement — or use one type for a cohesive look.</p>
@@ -425,9 +478,11 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
       </div>
     </div>
   </div>
+  </div>
 </section>
 <section class="journey-section">
-  <div class="section-label" style="text-align:center;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8c8070;margin-bottom:14px;">How It Works</div>
+  <div class="animate">
+  <div class="section-label" style="text-align:center;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#8c8070;margin-bottom:14px;">How It Works</div>
   <div class="journey-wrap">
     <div class="journey-text">
       <h2>Your DIY Wedding Flower Journey</h2>
@@ -441,8 +496,10 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
     </div>
     <div class="journey-img"><img src="image/floral-harmony.png" alt="Florist"></div>
   </div>
+  </div>
 </section>
 <section class="why-diy">
+  <div class="animate">
   <h2>Why DIY Your Wedding Flowers?</h2>
   <div class="diy-grid">
     <div class="diy-card"><h4>More Personal</h4><p>Every flower you choose, every stem you arrange — handmade creations carry emotional weight that professionally made arrangements simply can't replicate.</p></div>
@@ -450,9 +507,11 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
     <div class="diy-card"><h4>More Flexibility</h4><p>Change your mind about colours or styles? When you source the materials, adjustments are easy. No florist to brief, no redesign fees.</p></div>
     <div class="diy-card"><h4>Keepsake Forever</h4><p>Preserved flowers last years — your bridal bouquet becomes a keepsake. Your wedding arrangement can become home décor that reminds you of your day.</p></div>
   </div>
+  </div>
 </section>
 <section class="compare">
-  <div class="section-label" style="text-align:center;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8c8070;margin-bottom:14px;">Flower Comparison</div>
+  <div class="animate">
+  <div class="section-label" style="text-align:center;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#8c8070;margin-bottom:14px;">Flower Comparison</div>
   <h2>Preserved vs Dried vs Artificial vs Combo</h2>
   <div class="compare-table">
     <table>
@@ -466,27 +525,34 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
       </tbody>
     </table>
   </div>
+  </div>
 </section>
 <section class="florist-cta">
+  <div class="animate">
   <h2>Prefer a Professional Florist?</h2>
   <p>If you'd rather have a professional florist create your wedding arrangements, we can connect you with trusted florists from our directory — many of whom source their materials from Lee Flora.</p>
   <a href="#" class="btn-dark">Browse Florist Directory →</a>
+  </div>
 </section>
 <section class="faq-section">
-  <div class="section-label" style="text-align:center;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8c8070;margin-bottom:14px;">Wedding Flower Questions</div>
+  <div class="animate">
+  <div class="section-label" style="text-align:center;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#8c8070;margin-bottom:14px;">Wedding Flower Questions</div>
   <h2>Wedding Flower Questions</h2>
   <div class="faq-item open"><div class="faq-q">Can Lee Flora make full bouquets or do wedding arrangements?</div><div class="faq-a">Lee Flora is a wholesale supplier — we sell the flowers and materials. For full professional arrangements, we can refer you to florists in our directory who source from us. Alternatively, we'll teach you how to make arrangements yourself.</div></div>
   <div class="faq-item"><div class="faq-q">Can I use preserved and artificial flowers for my wedding?</div><div class="faq-a">Absolutely — many Singapore brides now use combo arrangements. Preserved roses in a bouquet, faux greenery for volume, and dried pampas for texture creates a stunning, cost-effective arrangement that looks incredible in photos.</div></div>
   <div class="faq-item"><div class="faq-q">What is a preserved flower hantaran cost?</div><div class="faq-a">DIY preserved flower hantarans using wholesale materials from Lee Flora typically cost $30–$80 per tray depending on the flowers selected. Our team can advise on the best flowers for Malay and Chinese wedding traditions.</div></div>
   <div class="faq-item"><div class="faq-q">How much does a DIY preserved bridal bouquet cost?</div><div class="faq-a">Using wholesale materials from Lee Flora, a DIY preserved bridal bouquet typically costs $60–$150 in materials, compared to $200–$500+ for a professionally made fresh bouquet that wilts after the day.</div></div>
   <div class="faq-item"><div class="faq-q">Do I need experience to DIY my own wedding flowers?</div><div class="faq-a">No experience needed. Our team at the showroom will guide you through technique, colour selection, and assembly. Many brides who have never arranged flowers before create stunning bouquets with our guidance.</div></div>
+  </div>
 </section>
 <section class="bottom-cta">
+  <div class="animate">
   <h2>Start Planning Your Wedding Flowers</h2>
   <p>Visit our showroom to touch the flowers, get expert advice, and learn arrangement techniques. Or browse our online catalogue to start planning.</p>
   <div class="btns">
     <a href="#" class="btn-green">WhatsApp Us</a>
     <a href="#" class="btn-ghost">Shop Online</a>
+  </div>
   </div>
 </section>
 
@@ -560,5 +626,17 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   </div>
 </footer>
 
-<script>document.querySelectorAll(".faq-q").forEach(q=>{q.addEventListener("click",()=>{q.parentElement.classList.toggle("open")})})</script>
+<script>document.querySelectorAll(".faq-q").forEach(q=>{q.addEventListener("click",()=>{q.parentElement.classList.toggle("open")})})
+    const elements = document.querySelectorAll('.animate');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+elements.forEach(el => observer.observe(el));
+</script>
 </body></html>

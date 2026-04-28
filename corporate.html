@@ -295,7 +295,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 .sol-card-img{height:180px;background:#ffffff;display:flex;align-items:center;justify-content:center;}
 .sol-card-body{padding:26px;}
 .sol-card h3{font-family:'Playfair Display',serif;font-size:20px;margin-bottom:10px;}
-.sol-card p{font-size:15px;line-height:1.6;color:#6b6258;}
+.sol-card p{font-size:14px;line-height:1.6;color:#6b6258;}
 .sol-card-img img {
   width: 100%;
   height: 100%;
@@ -395,7 +395,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
 .cost-table tbody td{padding:14px 20px;font-size:15px;border-bottom:1px solid #ede8e0;}
 .cost-table .highlight{background:#2d3a29!important;}
 .cost-table .highlight td{color:#fff;font-weight:500;}
-.cost-table .strikethrough{text-decoration:line-through;color:#b0a89a;}
+/*.cost-table .strikethrough{text-decoration:line-through;color:#b0a89a;}*/
 .install-cta{padding:50px 60px;text-align:center;}
 .install-cta h2{font-family:'Playfair Display',serif;font-size:28px;margin-bottom:12px;}
 .install-cta p{color:#6b6258;max-width:520px;margin:0 auto 26px;line-height:1.6;font-size:16px;}
@@ -451,11 +451,21 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;}
   transform: translateY(0);
 }
 @media(max-width:900px){
-  .solutions-grid{grid-template-columns:repeat(2, 1fr);}
+  .solutions-grid{grid-template-columns:1fr;gap:32px;max-width:900px;}
+  .sol-card{background:transparent;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;}
+  .sol-card-img{height:auto;aspect-ratio:4/3;border-radius:8px;overflow:hidden;}
+  .sol-card-body{padding:0;}
+  .sol-card:nth-child(even) .sol-card-img{order:2;}
+  .sol-card:nth-child(even) .sol-card-body{order:1;}
 }
 @media(max-width:768px){
   .hero,.why-section,.solutions,.benefits,.cost-section,.install-cta,.faq-section,.bottom-cta{padding:50px 24px;}
-  .solutions-grid{grid-template-columns:1fr;}
+  .solutions-grid{grid-template-columns:1fr;gap:24px;}
+  .sol-card{background:#fff;display:block;gap:0;}
+  .sol-card-img{aspect-ratio:auto;height:180px;border-radius:0;}
+  .sol-card-body{padding:26px;}
+  .sol-card:nth-child(even) .sol-card-img{order:initial;}
+  .sol-card:nth-child(even) .sol-card-body{order:initial;}
 }
 </style>
 </head>
